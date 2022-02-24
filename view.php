@@ -56,7 +56,8 @@ if ($result->num_rows > 0) {
         echo "<td>" . $row['Fax'] . "</td>";
         ?>
         <td>
-            <a href="edit_customers.php?CustomerID=<?php echo $row['CustomerID'];?>">Edit </a>
+            <a href="edit_customers.php?CustomerID=<?php echo $row['CustomerID'];?>"><button type="button" class="btn btn-warning">Edit</button></a>
+            <a href="delete_customers.php?CustomerID=<?php echo $row['CustomerID'];?>"><button type="button" class="btn btn-danger">Delete</button></a>
         </td>
 
         <?php
